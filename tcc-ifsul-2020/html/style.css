@@ -1,0 +1,37 @@
+.navBar {
+	background-image: linear-gradient(to right, #4da6ff, #ffff80);
+    text-align: center;
+    
+}
+
+.navBar ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+}
+
+.navBar li {
+    display: inline-block;
+}
+
+.navBar a {
+  	display: inline-block;
+  	color:  #ffffff;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 18px;
+
+}
+
+.navBar li a:hover {
+  	background-color: #99ccff;
+  	opacity: 1;
+  	color: white;
+}
+
+.active {
+	font-size: 18px;
+	font-weight: bold;
+}

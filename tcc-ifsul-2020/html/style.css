@@ -1,6 +1,82 @@
+/* geral */
+
+body {
+  background-color:#add1b0;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 12px;
+  padding-bottom: -6px;
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+hr {
+      color: white;
+      background-color: white;
+      height: 1px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+input[type=text]{
+    width:85%;
+    height: auto;
+    display: block;
+    border:2px solid #ccffcc;
+    border-radius:4px;
+    margin:auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: 18px;
+}
+  
+input[type=text]:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+
+textarea{
+    width: 80%;
+    height: 80%;
+    display: block;
+    border:2px solid #ccffcc;
+    border-radius:4px;
+    margin:auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+  
+textarea:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+
+.active {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* nav */
+
 .navBar {
 	background-image: linear-gradient(to right, #4da6ff, #ffff80);
-    text-align: center;
+  text-align: center;
+  width: auto;
     
 }
 
@@ -31,7 +107,173 @@
   	color: white;
 }
 
-.active {
-	font-size: 18px;
-	font-weight: bold;
+/* profilePage.html */
+
+.divFoto{
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -50px;
 }
+
+.fotoPerfil {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+.divProfile {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.labelPerfil {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.save {
+  width: 150px;
+  color: white !important;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 12px;
+  border: 4px solid white !important;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+.save:hover {
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+/* frontPage.html */
+
+.gruposDiv {
+  margin-top: 25px;
+  width: auto;
+  height: auto;
+  float: middle;
+  margin-left: 2%;
+  margin-right: 2%;
+  background: rgba(71,174,215,1);
+  border-radius: 0px 50px 30px 50px;
+  -moz-border-radius: 0px 50px 50px 30px;
+  -webkit-border-radius: 0px 50px 50px 30px;
+  border: 2px solid white; 
+  text-align: left;     
+}
+
+.labelGrupos {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.buttonGrupo1 {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background: #2582a7;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 8px;
+  border: 5px black;
+}
+
+.buttonGrupo1:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+/* myGroupPage.html */
+
+.meusGruposDiv {
+  margin-top: 25px;
+  width: auto;
+  height: auto;
+  float: middle;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #91ad3d;
+  border-radius: 0px 50px 30px 50px;
+  -moz-border-radius: 0px 50px 50px 30px;
+  -webkit-border-radius: 0px 50px 50px 30px;
+  border: 2px solid white; 
+  text-align: left;     
+}
+
+.meusGruposCriadosDiv {
+  margin-top: 25px;
+  width: auto;
+  height: auto;
+  float: middle;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: #8a7a3d;
+  border-radius: 0px 50px 30px 50px;
+  -moz-border-radius: 0px 50px 50px 30px;
+  -webkit-border-radius: 0px 50px 50px 30px;
+  border: 2px solid white; 
+  text-align: left;     
+}
+
+.sairGrupo {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background: #f09089;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 8px;
+  border: 5px black;
+}
+
+.sairGrupo:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+.excluirGrupo {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background: #8a173f;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 8px;
+  border: 5px black;
+  display: inline;
+}
+
+.excluirGrupo:hover {
+  color: white;
+  opacity: 0.9;
+}
+

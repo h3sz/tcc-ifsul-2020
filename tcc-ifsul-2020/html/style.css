@@ -46,8 +46,65 @@ input[type=text]:focus{
     box-shadow:0 0 8px 0 green;
 }
 
+input[type=date]{
+    width:85%;
+    height: auto;
+    display: block;
+    border:2px solid #ccffcc;
+    border-radius:4px;
+    margin:auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: 18px;
+}
+  
+input[type=date]:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+
+input[type=time]{
+    width:85%;
+    height: auto;
+    display: block;
+    border:2px solid #ccffcc;
+    border-radius:4px;
+    margin:auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: 18px;
+}
+  
+input[type=time]:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+
+input[type=number]{
+    width:85%;
+    height: auto;
+    display: block;
+    border:2px solid #ccffcc;
+    border-radius:4px;
+    margin:auto;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: 18px;
+}
+  
+input[type=number]:focus{
+    border-color:green;
+    box-shadow:0 0 8px 0 green;
+}
+
 textarea{
-    width: 80%;
+    width: 85%;
     height: 80%;
     display: block;
     border:2px solid #ccffcc;
@@ -155,9 +212,9 @@ textarea:focus{
 }
 
 .save:hover {
-color: #494949 !important;
+color: white;
 border-radius: 50px;
-border-color: #494949 !important;
+border-color: white;
 transition: all 0.3s ease 0s;
 }
 
@@ -212,9 +269,9 @@ transition: all 0.3s ease 0s;
   width: auto;
   height: auto;
   float: middle;
-  margin-left: 5%;
-  margin-right: 5%;
-  background: #91ad3d;
+  margin-left: 2%;
+  margin-right: 2%;
+  background: #d78f47;
   border-radius: 0px 50px 30px 50px;
   -moz-border-radius: 0px 50px 50px 30px;
   -webkit-border-radius: 0px 50px 50px 30px;
@@ -227,9 +284,9 @@ transition: all 0.3s ease 0s;
   width: auto;
   height: auto;
   float: middle;
-  margin-left: 5%;
-  margin-right: 5%;
-  background: #8a7a3d;
+  margin-left: 2%;
+  margin-right: 2%;
+  background: #d78f47;
   border-radius: 0px 50px 30px 50px;
   -moz-border-radius: 0px 50px 50px 30px;
   -webkit-border-radius: 0px 50px 50px 30px;
@@ -241,7 +298,7 @@ transition: all 0.3s ease 0s;
   font-size: 16px;
   color: white;
   font-weight: bold;
-  background: #f09089;
+  background: #8a173f;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -277,3 +334,94 @@ transition: all 0.3s ease 0s;
   opacity: 0.9;
 }
 
+/* treePage.html */
+
+.accordion {
+  margin-top: 15px;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 99%;
+  padding: 10px;
+  padding-left: 40px;
+  height: auto;
+  background-color: #ebd483;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+.accordion:hover {
+  opacity: 0.8;
+}
+
+.panel {
+  margin-left: 0.5%;
+  margin-right: 0%;
+  width: 99%;
+  padding: 5px;
+  display: none;
+  background-color: #dbcfa3;
+  overflow: hidden;
+}
+
+table {
+  width: 99%;
+}
+
+td {
+  color: white;
+  font-size: 18px;
+}
+
+.tdEspecial{
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  padding-bottom: 10px;
+
+}
+
+.fotoTree {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+/* createGroupPage.html */
+
+.labelCreateGroup {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.createGroup {
+  width: 150px;
+  color: white;
+  text-transform: uppercase;
+  background: transparent;
+  padding: 12px;
+  border: 4px solid white;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+.createGroup:hover {
+color: white;
+border-radius: 50px;
+border-color: white;
+transition: all 0.3s ease 0s;
+}

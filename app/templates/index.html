@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- funcionar em todas resoluções -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
+
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+	<title>ajudy</title>
+</head>
+<body>
+
+	<div class="divPrincipalLogin">
+  		<div class="divLogin">
+    		<form action="/" method="post">
+      			<input required="" name="matricula" style="margin-bottom: 5px;" type="text" placeholder="matrícula"/>
+		      	<input required="" name="senha" style="margin-bottom: 5px;" type="password" placeholder="senha"/>
+		      	<button type="submit" name="submit" value="submit" class="entrarLogin">entrar</button>
+		      	<a href="/createAccount"><p style="padding-top: 5px; color: grey; font-weight: normal;">Não tem uma conta? </p></a>
+    		</form>
+</body>
+</html>

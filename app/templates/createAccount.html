@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- funcionar em todas resoluções -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+	<title>ajudy</title>
+</head>
+<body>
+	<div class="divPrincipalLogin">
+  		<div class="divLogin">
+    		<form>
+      			<input name="matriculaConta" required="required" style="margin-bottom: 5px;" type="text" placeholder="matrícula"/>
+		      	<input name="senhaConta" required="required" style="margin-bottom: 5px;" type="password" placeholder="senha"/>
+		      	<input style="margin-bottom: 5px;" required="required" type="password" placeholder="confirmar senha" oninput="check(this)" />
+		      	<!-- checar senhar
+			      	<script language='javascript' type='text/javascript'>
+	    				function check(input) {
+	        			if (input.value != document.getElementById('password').value) {
+	            			input.setCustomValidity('senhas devem ser iguais');
+	        			} else {
+	            			input.setCustomValidity('');
+	        			}	
+	    			}
+					</script>
+				-->
+		      	<button type="submit" class="entrarLogin" href="">entrar</button>
+		      	<a href="/index"><p style="padding-top: 5px; color: grey; font-weight: normal;">Já tem uma conta? </p></a>
+    		</form>
+</body>
+</html>
